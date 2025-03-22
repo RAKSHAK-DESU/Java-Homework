@@ -43,6 +43,7 @@ public class BankAccount {
         BankAccount acc2= new BankAccount(102,"Tristan",30,20000000);
         BankAccount acc3= new BankAccount(103,"Andrew",38,1000000000);
         BankAccount acc4= new BankAccount(104,"Chad",54,189084349);
+        BankAccount acc5= new BankAccount(105,"Cobra",38,2000000000);
         acc1.deposit(2000);
         acc1.checkBalance();
         acc1.withdraw(200066668);
@@ -50,5 +51,6 @@ public class BankAccount {
         acc4.withdraw(1000);
         acc2.checkBalance();
         acc3.deposit(200000);
+        acc5.deposit(1000000000);
     }
 }
