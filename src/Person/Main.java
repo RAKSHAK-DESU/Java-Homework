@@ -6,7 +6,7 @@ public class Main {
         p.displayInfo();
         p.displayInfo("Pharmacist", 300000000);
 
-        Employee e = new Employee("Andrew", 38, "Athlete", "Kickboxer");
+        Employee e = new Employee("Andrew", 38, "Athlete", "Kick-boxer");
         e.displayInfo();
     }
 }
