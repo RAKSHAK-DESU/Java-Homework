@@ -1,4 +1,3 @@
-// Parent class
 package Person;
 public class Person {
     protected String name;
@@ -6,14 +5,13 @@ public class Person {
     protected String occupation;
     protected int salary;
 
-    // Constructor with correct parameters
+
     public Person(String name, int age, String occupation) {
         this.name = name;
         this.age = age;
         this.occupation = occupation;
     }
 
-    // Method Overloading: Creating two methods of the same name with different parameters
     public void displayInfo() {
         System.out.println("Name: " + name + ", Age: " + age + ", Occupation: " + occupation);
     }
@@ -23,13 +21,12 @@ public class Person {
     }
 }
 
-// Employee class inheriting from Person (placed outside)
 class Employee extends Person {
     private String jobTitle;
 
-    // Constructor now includes the required 'occupation' parameter
+
     public Employee(String name, int age, String occupation, String jobTitle) {
-        super(name, age, occupation);  // Corrected super() call
+        super(name, age, occupation);
         this.jobTitle = jobTitle;
     }
 
