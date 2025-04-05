@@ -15,7 +15,7 @@ public class Person {
     public void displayInfo() {
         System.out.println("Name: " + name + ", Age: " + age + ", Occupation: " + occupation);
     }
-
+//compile time polymorphism , method overloading
     public void displayInfo(String occupation, int salary) {
         System.out.println(name + " is a " + occupation + " and his salary is: " + salary);
     }
@@ -29,7 +29,8 @@ class Employee extends Person {
         super(name, age, occupation);
         this.jobTitle = jobTitle;
     }
-
+    //method overriding allows a subclass to provide a specific implementation of a method that is already
+    // defined in its superclass, enabling polymorphism and code reuse
     @Override
     public void displayInfo() {
         System.out.println("Name: " + name + ", Age: " + age + ", Job Title: " + jobTitle);
