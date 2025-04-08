@@ -2,8 +2,8 @@ package WePay;
 
 public class CreditCardPay extends WePay implements Refundable {
 
-    public CreditCardPay(int amount, String payername) {
-        super(amount, payername);
+    public CreditCardPay(int amount, String payername,int payerBalance) {
+        super(amount, payername,payerBalance);
     }
 
     @Override

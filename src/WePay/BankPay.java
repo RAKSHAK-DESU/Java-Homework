@@ -1,8 +1,8 @@
 package WePay;
 
 public class BankPay extends WePay{
-    public BankPay(int amount, String payername) {
-        super(amount, payername);
+    public BankPay(int amount, String payername, int payerBalance) {
+        super(amount, payername,payerBalance);
     }
 
     @Override

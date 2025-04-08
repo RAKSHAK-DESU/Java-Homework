@@ -2,8 +2,8 @@ package WePay;
 
 public class UpiPay extends WePay  implements Refundable {
 
-    public UpiPay(int amount,String payerName) {
-        super(amount,payerName);
+    public UpiPay(int amount,String payerName, int payerBalance) {
+        super(amount,payerName,payerBalance);
     }
 
     @Override
